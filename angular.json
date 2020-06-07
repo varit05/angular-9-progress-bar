@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-progress-bar"
+    }
+  },
+  "defaultProject": "angular-progress-bar",
+  "cli": {
+    "analytics": false
+  }
 }

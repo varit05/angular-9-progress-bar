@@ -1,0 +1,10 @@
+<ng-container>
+  <div class="progress" [ngClass]="large ? 'progress-large' : 'progress-small'">
+    <span [style.width]="start + '%'">
+      <span class="progress-animation" [style.background-color]="color">
+        {{start}} %
+      </span>
+    </span>
+  </div>
+  <p>We already sold {{start}} % of our products</p>
+</ng-container>
