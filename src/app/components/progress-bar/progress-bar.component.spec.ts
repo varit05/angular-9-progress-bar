@@ -39,20 +39,11 @@ describe('ProgressBarComponent', () => {
   });
 
   it('should have a progress', () => {
-    expect(component.progress).toBe('0');
+    expect(component.value).toBe('0');
   });
 
   it('should check paragraph element and return 0%', () => {
     const pEle = debugElement.query(By.css('p')).nativeElement;
     expect(pEle.textContent).toBe('We already sold 0 % of our products');
   });
-
-  it('should check check paragraph element and return 1%', async(() => {
-    const pEle = debugElement.query(By.css('p')).nativeElement;
-    fixture.whenStable().then(() => {
-      component.progress = '1';
-      fixture.detectChanges();
-      expect(pEle.textContent).toBe('We already sold 1 % of our products');
-    });
-  }));
 });

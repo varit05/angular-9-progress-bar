@@ -20,7 +20,6 @@ export class ProgressBarComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     const { value } = changes;
-    console.log('value', value);
     if (!value.firstChange) {
       this.start = 0;
       this.renderText();
